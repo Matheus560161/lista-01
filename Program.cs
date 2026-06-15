@@ -1,13 +1,18 @@
-﻿Console.Write("Informe a quantidade de tarefas concluídas:");
-
-int tarefasConcluidas = int.Parse(Console.ReadLine()!);
-if (tarefasConcluidas >= 50)
+﻿Console.WriteLine("Informe sua idade: ");
+int idade = int.Parse(Console.ReadLine());
+if (idade > 0 && idade < 11)
 {
-    Console.WriteLine($"Méta atingida!");
-    Console.WriteLine($"Você concluiu {tarefasConcluidas} tarefas!");
+    Console.WriteLine("Criança");
+}
+else if (idade >= 11 && idade < 17)
+{
+    Console.WriteLine("Adolescente");
+}
+else if (idade >= 18 && idade < 59)
+{
+    Console.WriteLine("Adulto");
 }
 else
 {
-    Console.WriteLine("Meta não atingida.");
-    Console.WriteLine($"Faltam {50 - tarefasConcluidas} tarefas para atingir a meta!");
+    Console.WriteLine("Idoso");
 }
